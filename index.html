@@ -697,14 +697,14 @@ footer{position:relative;z-index:2;padding:80px clamp(20px,5vw,60px) 50px;border
         <p>My happy place is making something from nothing: a game, a website, a robotics project. I care about the <b>little details</b> that make a project feel polished — even the ones nobody notices.</p>
         <p>When I'm not coding, I'm at robotics club, hanging out with friends, or going down YouTube rabbit holes learning something new.</p>
         <div class="stat-grid">
-          <div class="card"><div class="num counter" data-to="240" data-suffix="K">0</div><small>Lines of code written</small></div>
-          <div class="card"><div class="num counter" data-to="99" data-suffix="%">0</div><small>Curiosity level</small></div>
+          <div class="card"><div class="num counter" data-to="24" data-suffix="K">0</div><small>Lines of code written</small></div>
+          <div class="card"><div class="num counter" data-to="99.9" data-suffix="%">0</div><small>Curiosity level</small></div>
         </div>
       </div>
       <div class="timeline reveal reveal-d3">
-        <div class="tl-item"><div class="yr">2025 — NOW</div><h4>Junior Year</h4><div class="co">Lincoln High School</div><p>Diving deeper into computer science, leading the robotics club, and building projects on weekends.</p></div>
-        <div class="tl-item"><div class="yr">2023 — 2024</div><h4>Sophomore Year</h4><div class="co">Lincoln High School</div><p>Took my first real CS class, taught myself web development, and built my first few websites.</p></div>
-        <div class="tl-item"><div class="yr">2022 — 2023</div><h4>Freshman Year</h4><div class="co">Lincoln High School</div><p>Wrote my first lines of code, fell down the coding rabbit hole, and never looked back.</p></div>
+        <div class="tl-item"><div class="yr">2025 — NOW</div><h4>Junior Year</h4><div class="co">Father Michael Goetz SSC School</div><p>Diving deeper into computer science, leading the robotics club, and building projects on weekends.</p></div>
+        <div class="tl-item"><div class="yr">2023 — 2024</div><h4>Sophomore Year</h4><div class="co">Father Michael Goetz SSC School</div><p>Took my first real CS class, taught myself web development, and built my first few websites.</p></div>
+        <div class="tl-item"><div class="yr">2022 — 2023</div><h4>Freshman Year</h4><div class="co">Father Michael Goetz SSC School</div><p>Wrote my first lines of code, fell down the coding rabbit hole, and never looked back.</p></div>
       </div>
     </div>
   </div>
@@ -1029,9 +1029,13 @@ if(!isTouch){
 const SKILLS=[
   {name:'Web Development',pct:85,tags:['HTML','CSS','JavaScript'],icon:'M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z'},
   {name:'Python',pct:80,tags:['Python','Pygame','Automation'],icon:'M4 5h16v4H4zM4 11h16v4H4zM4 17h10v2H4z'},
-  {name:'Robotics',pct:72,tags:['Arduino','C++','Sensors'],icon:'M12 3c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3zM4 9c0 1.7 3.6 3 8 3s8-1.3 8-3M4 15c0 1.7 3.6 3 8 3s8-1.3 8-3'},
-  {name:'Math & Science',pct:90,tags:['Calculus','Physics','Chemistry'],icon:'M18 10a4 4 0 0 0-7.7-1.3A3.5 3.5 0 1 0 6 16h11a3 3 0 0 0 1-5.9z'},
-  {name:'Design',pct:68,tags:['Figma','Canva','UI'],icon:'M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'},
+  {name:'HTML & CSS',pct:72,tags:['Arduino','C++','Sensors'],icon:'M12 3c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3zM4 9c0 1.7 3.6 3 8 3s8-1.3 8-3M4 15c0 1.7 3.6 3 8 3s8-1.3 8-3'},
+  {name:'Java',pct:90,tags:['Calculus','Physics','Chemistry'],icon:'M18 10a4 4 0 0 0-7.7-1.3A3.5 3.5 0 1 0 6 16h11a3 3 0 0 0 1-5.9z'},
+  {name:'UI/UX Design',pct:68,tags:['Figma','Canva','UI'],icon:'M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'},
+  {name:'Robotics',pct:75,tags:['Debate','Presenting','Leadership'],icon:'M12 2a5 5 0 0 0-5 5v1a4 4 0 0 0 0 8v1a5 5 0 0 0 10 0v-1a4 4 0 0 0 0-8V7a5 5 0 0 0-5-5z'},
+  {name:'Maths & Science',pct:75,tags:['Debate','Presenting','Leadership'],icon:'M12 2a5 5 0 0 0-5 5v1a4 4 0 0 0 0 8v1a5 5 0 0 0 10 0v-1a4 4 0 0 0 0-8V7a5 5 0 0 0-5-5z'},
+  {name:'AI/ML Learning',pct:75,tags:['Debate','Presenting','Leadership'],icon:'M12 2a5 5 0 0 0-5 5v1a4 4 0 0 0 0 8v1a5 5 0 0 0 10 0v-1a4 4 0 0 0 0-8V7a5 5 0 0 0-5-5z'},
+  {name:'Swift UI/UX',pct:75,tags:['Debate','Presenting','Leadership'],icon:'M12 2a5 5 0 0 0-5 5v1a4 4 0 0 0 0 8v1a5 5 0 0 0 10 0v-1a4 4 0 0 0 0-8V7a5 5 0 0 0-5-5z'},
   {name:'Public Speaking',pct:75,tags:['Debate','Presenting','Leadership'],icon:'M12 2a5 5 0 0 0-5 5v1a4 4 0 0 0 0 8v1a5 5 0 0 0 10 0v-1a4 4 0 0 0 0-8V7a5 5 0 0 0-5-5z'},
 ];
 const PROJECTS=[
